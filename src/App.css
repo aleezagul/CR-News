@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+
 }
 
 .App-logo {
@@ -35,4 +35,69 @@
   to {
     transform: rotate(360deg);
   }
+
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: calc(25% - 20px);
+  margin: 10px;
+  text-overflow: ellipsis;
+overflow: hidden;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 600px;
+  height: 250px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 25px;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  max-height: 100px;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-footer {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.card-footer a {
+  text-decoration: none;
+  color: #007bff;
+}
+.card-header{
+  color: #555;
+  font-size: 20px;
 }
